@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Feedback Form</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            background-color: #f3f2ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .feedback-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow:4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .feedback-form img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .feedback-form h2 {
+            margin-bottom: 20px;
+        }
+        .feedback-form label {
+            display:flex;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .feedback-form input[type="text"],
+        .feedback-form input[type="email"],
+        .feedback-form input[type="tel"],
+        .feedback-form input[type="file"],
+        .feedback-form textarea,
+        .feedback-form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .feedback-form textarea {
+            height: 100px;
+        }
+        .feedback-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0a0d0f;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .feedback-form button:hover {
+            background-color: #005582;
+        }
+    </style>
+</head>
+<body style= "align-items:baseline; 
+background-origin: content-box;">
+    <form class="feedback-form">
+        <img src="amazon.png.jpg" alt="Product Logo">
+        <h2>Product Feedback</h2>
+
+        <label for="product-name">Product Name</label>
+        <input type="text" id="product-name" name="product-name" placeholder="Product Name" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+        <label for="rating">Rating</label>
+        <select id="rating" name="rating" required>
+            <option value="">Select Rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Very Good</option>
+            <option value="3">3 - Good</option>
+            <option value="2">2 - Fair</option>
+            <option value="1">1 - Poor</option>
+        </select>
+
+        <label for="review">Review</label>
+        <textarea id="review" name="review" placeholder="Write your review here..." required></textarea>
+
+        <label for="recommend">Would you recommend this product?</label>
+        <select id="recommend" name="recommend" required>
+            <option value="">Select</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+            <label for="photo">Upload Image</label>
+             <input type="file" id="photo" name="photo" accept="image/*" required>
+
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Deactivation Form</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            background-color: hsla(120, 14%, 95%, 0.521);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 10;
+        }
+        .deactivation-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow:4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .deactivation-form img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .deactivation-form h2 {
+            margin-bottom: 20px;
+        }
+        .deactivation-form label {
+            display:flex;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .deactivation-form input[type="text"],
+        .deactivation-form input[type="email"],
+        .deactivation-form select,
+        .deactivation-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .deactivation-form textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .deactivation-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4267B2;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .deactivation-form button:hover {
+            background-color: #365899;
+        }
+    </style>
+</head>
+<body>
+    <form class="deactivation-form">
+        <img src="instagram.png" alt="instagram Logo">
+        <h2>Deactivate Your Account</h2>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+        <label for="reason">Reason for Deactivation</label>
+        <select id="reason" name="reason" required>
+            <option value="">Select a reason</option>
+            <option value="temporary">This is temporary.I'll be back</option>
+            <option value="privacy">Concerned about my privacy</option>
+            <option value="too_time_consuming">Too much time on Facebook</option>
+            <option value="other_social_media">I use other social media</option>
+            <option value="don't_use">I don't use Facebook</option>
+            <option value="account_hacked">My account hacked</option>
+            <option value="don't_feel_safe">I don't feel safe on facebook</option>
+        </select>
+
+        <label for="feedback">Additional Feedback (Optional)</label>
+        <textarea id="feedback" name="feedback" placeholder="Please provide any additional feedback"></textarea>
+
+        <button type="submit">Deactivate</button>
+    </form>
+</body>
+</html>
